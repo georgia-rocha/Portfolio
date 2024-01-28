@@ -81,6 +81,8 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -100,6 +102,31 @@ a {
   text-decoration: none;
 }
 
+.waves {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.wave2 {
+  animation: moveWave2 7s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+  from {
+    transform: translateX(180px)
+  }
+}
+
+.wave3 {
+  animation: moveWave3 7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+  from {
+    transform: translateX(160px)
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
