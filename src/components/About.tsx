@@ -55,7 +55,7 @@ const About: React.FC = () => {
               <Image src={imgPerfil} alt='eu' style={{ width: '100%', height: 'auto', maxWidth: '23rem' }} />
             </Box>
           </Grid>
-          <Grid item xs={12} sx={{ textAlign: 'center', marginTop: '2rem' }}>
+          <Grid item xs={12} sx={{ textAlign: 'center'}}>
             <Typography variant='h5' sx={{ fontFamily: 'monospace' }}>Vamos construir algo incrível juntos!</Typography>
           </Grid>
         </Grid>

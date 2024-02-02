@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { Box, Typography, Link } from '@mui/material';
 import floral from '../../public/floral-card.jpeg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
