@@ -6,6 +6,8 @@ import tunes from '../../public/albumTunes.png';
 import shoppingCart from '../../public/shopingCart.png';
 import trybeWallet from '../../public/trybeWallet.png';
 import tfc from '../../public/tfc.png';
+import farm from '../../public/farm.png';
+import blog from '../../public/blog.jpeg';
 import uirapuru from '../../public/freelancerUirapuru.jpeg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -24,10 +26,10 @@ const projects = [
     description: 'Tunes of Life é uma aplicação web construída utilizando Next.js, React e Redux para gerenciar e explorar uma API de músicas.'
   },
   {
-    name: 'Tunes of Life',
-    image: tunes,
-    link: 'https://github.com/georgia-rocha/tunes-of-life',
-    description: 'Tunes of Life é uma aplicação web construída utilizando Next.js, React e Redux para gerenciar e explorar uma API de músicas.'
+    name: 'Agrix',
+    image: farm,
+    link: 'https://github.com/georgia-rocha/project-agrix-java',
+    description: 'Projeto para uma hipotetica empresa especializada em tecnologias para melhorar a eficiência no cultivo de plantações. Visando reduzir o desperdício de recursos, fazendo um uso mais responsável da terra disponível para plantio. '
   },
   {
     name: 'Shopping Cart',
@@ -46,6 +48,12 @@ const projects = [
     image: tfc,
     link: 'https://github.com/georgia-rocha/TFC-Brazilian-Soccer-Rankings',
     description: 'Site informativo sobre partidas e classificações de futebol, Back-end dockerizado consumido por um front-end já desenvolvido, com modelagem de dados através do Sequelize.'
+  },
+  {
+    name: 'Blogs API',
+    image: blog,
+    link: 'https://github.com/georgia-rocha/Blogs-API',
+    description: 'É uma API e um banco de dados em Node.js, utilizando sequelize para fazer um CRUD, onde é possível criar usuários, fazer login, criar categorias de posts, criar posts, atualizá-los, deletá-los, buscá-los por id e por texto em seu título ou em seu conteúdo. '
   }
 ];
 
