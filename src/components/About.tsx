@@ -1,11 +1,19 @@
 import * as React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import imgPerfil from '../../public/iprofile.png';
-import Image from 'next/image';
-import evento from '../../public/evento.jpeg';
-import evento2 from '../../public/evento2.jpg';
+import foto1 from '../../public/foto1.jpeg';
+import foto2 from '../../public/foto2.jpeg';
+import foto3 from '../../public/foto3.jpeg';
+import foto4 from '../../public/foto4.jpeg';
+import foto5 from '../../public/foto5.jpeg';
+import foto6 from '../../public/foto6.jpeg';
+import foto7 from '../../public/foto7.jpeg';
+import foto8 from '../../public/foto8.jpeg';
+import foto9 from '../../public/foto9.jpeg';
+import foto10 from '../../public/foto10.jpeg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   const responsive = {
@@ -55,16 +63,42 @@ const About: React.FC = () => {
               <Image src={imgPerfil} alt='eu' style={{ width: '100%', height: 'auto', maxWidth: '23rem' }} />
             </Box>
           </Grid>
-          <Grid item xs={12} sx={{ textAlign: 'center'}}>
+          <Grid item xs={12} sx={{ textAlign: 'center' }}>
             <Typography variant='h5' sx={{ fontFamily: 'monospace' }}>Vamos construir algo incrível juntos!</Typography>
           </Grid>
         </Grid>
         <Box sx={{ marginTop: '2rem', paddingLeft: '2rem' }}>
           <Carousel responsive={responsive} infinite>
-            <Box><Image src={evento} alt="img1" style={{ width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} /></Box>
-            <Box><Image src={evento2} alt="img2" style={{ width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} /></Box>
-            <Box><Image src={evento} alt="img1" style={{ width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} /></Box>
-            <Box><Image src={evento2} alt="img2" style={{ width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} /></Box>
+            <Box>
+              <Image src={foto1} alt="img1" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto2} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto3} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto4} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto5} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto6} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto7} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto8} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto9} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
+            <Box>
+              <Image src={foto10} alt="img2" style={{ objectFit: 'cover', width: '20rem', height: '20rem', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} />
+            </Box>
           </Carousel>
         </Box>
       </Box>
