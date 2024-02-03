@@ -79,49 +79,56 @@ const Projects: React.FC = () => {
 
   return (
     <Box sx={{ marginBottom: '4rem', marginTop: '4rem' }}>
-      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem' }} id="Projetos">Projetos</Typography>
-      <Box sx={{paddingLeft: '2rem'}}>
-      <Carousel responsive={responsive} infinite>
-        {projects?.map((project, index) => (
-          <Link key={index} href={project?.link || ''} passHref
-            style={{
-              flex: '0 0 auto',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              backgroundColor: 'white',
-              color: 'black',
-              borderRadius: '1rem',
-              width: '20rem',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
-              padding: '1rem',
-              textDecoration: 'none',
-              margin: '0',
-              height: '25rem',
-              cursor: 'pointer', 
-            }}
-          >
-            <Typography variant="h5" gutterBottom>
-              {project?.name}
-            </Typography>
-            <Image
-              src={project?.image || ''}
-              alt={project?.name || ''}
-              style={{
-                width: '100%',
-                height: '10rem',
-                objectFit: 'cover',
-                borderRadius: '.5rem',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-              }}
-            />
-            <Typography variant="caption" sx={{ marginTop: '1rem', textAlign: 'justify' }}>
-              {project?.description}
-            </Typography>
-          </Link>
-        ))}
-      </Carousel>
+      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'monospace' }} id="Projetos">
+        Projetos
+      </Typography>
+      <Box sx={{ paddingLeft: '2rem' }}>
+        <Carousel responsive={responsive} infinite>
+          {projects?.map((project, index) => (
+            <Link key={index} href={project?.link || ''} passHref>
+              <Typography
+                component="a"
+                style={{
+                  flex: '0 0 auto',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  backgroundColor: 'white',
+                  color: 'black',
+                  borderRadius: '1rem',
+                  width: '25rem',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+                  padding: '1rem',
+                  textDecoration: 'none',
+                  margin: '0',
+                  cursor: 'pointer',
+                  fontSize: '1.2rem',
+                  fontFamily: 'monospace',
+                  height: '25rem',
+                }}
+              >
+                <Typography variant="h5" gutterBottom sx={{ fontFamily: 'monospace', textAlign: 'center' }}>
+                  {project?.name}
+                </Typography>
+                <Image
+                  src={project?.image || ''}
+                  alt={project?.name || ''}
+                  style={{
+                    width: '100%',
+                    height: '10rem',
+                    objectFit: 'cover',
+                    borderRadius: '.5rem',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                  }}
+                />
+                <Typography variant="caption" sx={{ marginTop: '0.5rem', textAlign: 'justify', fontFamily: 'monospace' }}>
+                  {project?.description}
+                </Typography>
+              </Typography>
+            </Link>
+          ))}
+        </Carousel>
       </Box>
     </Box>
   );
