@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
 
   return (
     <Box sx={{ backgroundColor: '#F5F5F5', height: '10%', padding: '16px', textAlign: 'center' }}>
-    <Typography variant='h5' id="Contatos">Vamos Trabalhar Juntos!</Typography>
+    <Typography variant='h5' id="Contatos" sx={{color: 'black', fontFamily: 'monospace'}}>Vamos Trabalhar Juntos!</Typography>
 
     <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '12px' }}>
       <Link href={socialLinks.linkedin} target="_blank" rel="noopener" style={{ marginRight: '12px' }}>
