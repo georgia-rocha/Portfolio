@@ -63,7 +63,7 @@ const Tecnologies: React.FC = () => {
         },
       }}
     >
-    <Typography variant="h4" sx={{marginTop: '2rem'}} id="Tecnologias">Tecnologias</Typography>
+    <Typography variant="h4" sx={{marginTop: '2rem', fontFamily: 'monospace'}} id="Tecnologias">Tecnologias</Typography>
    
     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem',marginTop: '2rem' }}>
       <Image src={typeScript} alt="Typescript" width={120} height={30} />
