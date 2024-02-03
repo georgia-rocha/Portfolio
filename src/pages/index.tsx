@@ -24,7 +24,7 @@ const Profile: React.FC = () => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    height: '90vh',
+    height: '100vh',
     margin: 0,
     padding: 0,
     display: 'flex',
