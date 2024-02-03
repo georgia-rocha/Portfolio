@@ -44,12 +44,12 @@ const About: React.FC = () => {
       </svg>
       <Box sx={{ height: '100%' }}>
         <Box sx={{ marginTop: '2rem' }} id="SobreMim">
-          <Typography variant='h4' sx={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'monospace' }}>Sobre Mim</Typography>
+          <Typography variant='h4' sx={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'monospace', color: 'black' }}>Sobre Mim</Typography>
         </Box>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: '100%', flexGrow: 1, width: { xs: '90vw', md: '60vw' } }}>
-              <Typography variant='h6' sx={{ textAlign: 'justify', marginBottom: '1rem', marginLeft: { xs: '2rem', md: '2rem' }, maxWidth: '100%', fontFamily: 'monospace' }}>
+              <Typography variant='h6' sx={{ textAlign: 'justify', marginBottom: '1rem', marginLeft: { xs: '2rem', md: '2rem' }, maxWidth: '100%', fontFamily: 'monospace', color: 'black' }}>
                 Em 2022, tomei a ousada decisão de fazer uma transição de carreira para área tech e ao longo de 2023, mergulhei de cabeça, trabalhando como freelancer e aprimorando minhas habilidades a cada projeto.
                 Sou determinada e apaixonada por evoluir constantemente na minha carreira.
                 Fora do ambiente profissional, sou casada e tenho uma cachorrinha (Maju) que é minha fiel companheira. Mantenho-me organizada e sempre busco atualizações nas tecnologias para entregar os melhores resultados.
@@ -64,7 +64,7 @@ const About: React.FC = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sx={{ textAlign: 'center' }}>
-            <Typography variant='h5' sx={{ fontFamily: 'monospace' }}>Vamos construir algo incrível juntos!</Typography>
+            <Typography variant='h5' sx={{ fontFamily: 'monospace', color: 'black' }}>Vamos construir algo incrível juntos!</Typography>
           </Grid>
         </Grid>
         <Box sx={{ marginTop: '2rem', paddingLeft: '2rem' }}>
