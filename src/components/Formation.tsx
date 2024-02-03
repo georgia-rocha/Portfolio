@@ -18,7 +18,7 @@ const Formation: React.FC = () => {
       <Box sx={{ height: '100%', color: 'white' }}>
         <Typography variant='h4' sx={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'monospace',  }} id="Formation">FORMAÇÃO</Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} sx={{ marginTop: {xs: '-2rem', md: '4rem' }}}>
+          <Grid item xs={12} md={6} sx={{ marginTop: {xs: '-2rem', md: '1rem' }}}>
             <Image src={woman} alt="woman-development" style={{ width: '100%', height: 'auto', objectFit: 'cover'}} />
           </Grid>
           <Grid item xs={12} md={6}>
